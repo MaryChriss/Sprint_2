@@ -1,270 +1,400 @@
-
-    /* Large */
-    @media(min-width: 1400px) {
-        * {
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-            color: #000;
-        }
+@media(max-width: 400px) {
+    * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 100%;
+        max-height: 400px;
+        background-color: #a9e1ff;
+        align-items: center;
+    }
+    
+    .container img {
+        max-height: 400px;
+        min-width: 200px;
+    }
+    
+    .texto {
+        font-size: 18px;
+        margin-left: 3rem;
+        margin-right: 20px;
+    }
+    
+    .texto h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .texto p {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+    
+    .sub {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    
+    .passoAPasso {
+        height: 260px;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        box-sizing: border-box;
+        border-radius: 6rem;
+        background-color: #dbe3ff;
+        display: flex;
+        justify-content: center;
         
+        
+    }
+    .passos-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    
+    .passo {
+        flex: 1;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    
+    .watson {
+        max-width: 100px; 
+        height: auto;
+        margin-bottom: -1rem;
+    }
+    
+    .passo h3 {
+        margin-top: 1rem;
+    }
+    
+    .passo p {
+        margin-top: 1rem;
+
+    }
+    
+    
+}
+
+/* Mobile */
+@media(max-width: 599px) {
+    * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 100%;
+        max-height: 400px;
+        background-color: #a9e1ff;
+        align-items: center;
+    }
+    
+    .container img {
+        max-height: 400px;
+        min-width: 200px;
+    }
+    
+    .texto {
+        font-size: 18px;
+        margin-left: 3rem;
+        margin-right: 20px;
+    }
+    
+    .texto h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .texto p {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+    
+    .sub {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    
+    .passoAPasso {
+        height: 260px;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        box-sizing: border-box;
+        border-radius: 6rem;
+        background-color: #dbe3ff;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .passos-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    
+    .passo {
+        flex: 1;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    
+    .watson {
+        max-width: 100px; 
+        height: auto;
+        margin-bottom: -1rem;
+    }
+    
+    .passo h3 {
+        margin-top: 1rem;
+    }
+    
+    .passo p {
+        margin-top: 1rem;
+
+    }
+    
+    @media(max-width: 400px) {
+    
         .container {
+            flex-direction: column;
             display: flex;
             max-width: 100%;
-            max-height: 400px;
+            max-height: 250px;
             background-color: #a9e1ff;
             align-items: center;
         }
-        
+    
         .container img {
-            max-height: 400px;
-            min-width: 200px;
+            max-width: 100%;
+            
         }
-        
+    
         .texto {
-            font-size: 18px;
-            margin-left: 3rem;
-            margin-right: 20px;
+            display: flex;
+            flex-direction: column;
         }
-        
         .texto h1 {
-            font-size: 40px;
+            margin-top: 2rem;
+            font-size: 25px;
             margin-bottom: 10px;
         }
         
         .texto p {
-            font-size: 20px;
-            margin-top: 2rem;
-        }
-        
-        .sub {
-            margin-top: 2rem;
-            margin-left: 4rem;
-        }
-        
-        .passoAPasso {
-            height: 260px;
-            margin-top: 2rem;
-            margin-bottom: 2.5rem;
-            margin-right: 3rem;
-            margin-left: 3rem;
-            box-sizing: border-box;
-            border-radius: 6rem;
-            background-color: #dbe3ff;
-            
-        }
-    
-        .passo1 img {
-            margin-top: 2rem;
-            height: 100px;
-        }
-        
-        .passo2 img {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo3 img {
-            margin-top: 3.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo4 img {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo5 img {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo1, .passo2, .passo3, .passo4, .passo5 {
-            display: inline-block;
-            width: 18%; 
-            text-align: center; 
-            vertical-align: top; 
-            margin: 0 10px; 
-        }
-        
-        @media(max-width: 400px) {
-        
-            .container {
-                flex-direction: column;
-                display: flex;
-                max-width: 100%;
-                max-height: 250px;
-                background-color: #a9e1ff;
-                align-items: center;
-            }
-        
-            .container img {
-                max-width: 100%;
-                
-            }
-        
-            .texto {
-                display: flex;
-                flex-direction: column;
-            }
-            .texto h1 {
-                margin-top: 2rem;
-                font-size: 25px;
-                margin-bottom: 10px;
-            }
-            
-            .texto p {
-                display: flex;
-                text-align: center;
-                font-size: 15px;
-                margin-top: 10px;
-                margin-bottom: 2rem;
-            }
-        }
-    }
-
-    /* Mobile */
-    @media(max-width: 599px) {
-        * {
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-            color: #000;
-        }
-        
-        .container {
-            display: flex;
-            flex-direction: column;
-            max-width: 100%;
-            max-height: 190px;
-            background-color: #a9e1ff;
-            align-items: center;
-        }
-        
-        .container img {
-            margin-top: 1.3rem;
-            max-width: 100%;
-        }
-        
-        .texto {
             display: flex;
             text-align: center;
-            justify-content: center;
-            flex-direction: column;
-            font-size: 1rem;
-            margin-left: 1rem;
-            margin-right: 10px;
-        }
-        
-        .texto h1 {
-            margin-top: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        .texto p {
-            margin-top: 1rem;
-            font-size: 1rem;
-            
-        }
-        
-        .sub {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 20rem;
-        }
-        
-        .passoAPasso {
-            height: 40rem;
-            margin-top: 2rem;
-            margin-bottom: 2.5rem;
-            margin-right: 3rem;
-            margin-left: 3rem;
-            box-sizing: border-box;
-            border-radius: 6rem;
-            background-color: #dbe3ff;
-        }
-
-        .pt1 {
-            display: flex;
-            justify-content: space-around;
-        }
-        
-        .passo1 img {
-            margin-top: 2rem;
-            height: 100px;
-        }
-        
-        .passo2 img {
-            margin-top: 3rem;
+            font-size: 15px;
+            margin-top: 10px;
             margin-bottom: 2rem;
-        }
-        
-        .passo3 img {
-            margin-top: 3.5rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo4 img {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo5 img {
-            margin-top: 3rem;
-            margin-bottom: 2rem;
-        }
-        
-        .passo1, .passo2, .passo3, .passo4, .passo5 {
-            width: 5rem; 
-            justify-content: center;
-            flex-direction: column;
-            margin: 0 10px; 
-        }
-
-        .pt1 {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        @media(max-width: 400px) {
-        
-            .container {
-                flex-direction: column;
-                display: flex;
-                max-width: 100%;
-                max-height: 250px;
-                background-color: #a9e1ff;
-                align-items: center;
-            }
-        
-            .container img {
-                max-width: 100%;
-                
-            }
-        
-            .texto {
-                display: flex;
-                flex-direction: column;
-            }
-            .texto h1 {
-                margin-top: 2rem;
-                font-size: 25px;
-                margin-bottom: 10px;
-            }
-            
-            .texto p {
-                display: flex;
-                text-align: center;
-                font-size: 15px;
-                margin-top: 10px;
-                margin-bottom: 2rem;
-            }
         }
     }
+}
 
-    /* Tablet */
-    @media (min-width: 600px) and (max-width:999px){}
+/* Tablet */
+@media (min-width: 600px) and (max-width:999px){
+    * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 100%;
+        max-height: 400px;
+        background-color: #a9e1ff;
+        align-items: center;
+    }
+    
+    .container img {
+        max-height: 400px;
+        min-width: 200px;
+    }
+    
+    .texto {
+        font-size: 18px;
+        margin-left: 3rem;
+        margin-right: 20px;
+    }
+    
+    .texto h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .texto p {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+    
+    .sub {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    
+    .passoAPasso {
+        height: 260px;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        box-sizing: border-box;
+        border-radius: 6rem;
+        background-color: #dbe3ff;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .passos-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
 
-    /* Desktop */
-    @media (min-width: 1000px) and (max-width:1399px){}
+    }
+    
+    .passo {
+        flex: 1;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    
+    .watson {
+        max-width: 100px; 
+        height: auto;
+        margin-bottom: -1rem;
+    }
+    
+    .passo h3 {
+        margin-top: 1rem;
+    }
+    
+    .passo p {
+        margin-top: 1rem;
+
+    }
+}
+
+/* Desktop */
+@media (min-width: 1000px) and (max-width:1399px){
+    * {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+    
+    .container {
+        display: flex;
+        max-width: 100%;
+        max-height: 400px;
+        background-color: #a9e1ff;
+        align-items: center;
+    }
+    
+    .container img {
+        max-height: 400px;
+        min-width: 200px;
+    }
+    
+    .texto {
+        font-size: 18px;
+        margin-left: 3rem;
+        margin-right: 20px;
+    }
+    
+    .texto h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .texto p {
+        font-size: 20px;
+        margin-top: 2rem;
+    }
+    
+    .sub {
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+    
+    .passoAPasso {
+        height: 260px;
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+        margin-right: 3rem;
+        margin-left: 3rem;
+        box-sizing: border-box;
+        border-radius: 6rem;
+        background-color: #dbe3ff;
+        display: flex;
+        justify-content: center;
+        
+        
+    }
+    .passos-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+    
+    .passo {
+        flex: 1;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: center;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    
+    .watson {
+        max-width: 100px; 
+        height: auto;
+        margin-bottom: -1rem;
+    }
+    
+    .passo h3 {
+        margin-top: 1rem;
+    }
+    
+    .passo p {
+        margin-top: 1rem;
+
+    }
+}
+
