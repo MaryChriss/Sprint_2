@@ -208,13 +208,13 @@
     .sub h2 {
         display: flex;
         justify-content: center;
-        margin-top: 13rem;
+        margin-top: 15rem;
         margin-left: -2rem;
         
     }
     
     .passoAPasso {
-        height: 50rem;
+        height: 60rem;
         margin-top: 2rem;
         margin-bottom: 2.5rem;
         margin-right: 3rem;
@@ -232,24 +232,10 @@
         flex-wrap: wrap;
         width: 100%;
         margin: 0 auto;
-
+        justify-content: center;
+        margin-left: 4rem;
     }
     
-    .passo {
-        flex: 1;
-        margin: 10px;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
-        margin-top: 2rem;
-        margin-right: 5rem;
-    }
-    
-    .watson {
-        max-width: 100px; 
-        height: auto;
-        margin-bottom: -1rem;
-    }
     
     .passo h3 {
         margin-top: 1rem;
@@ -258,17 +244,12 @@
     .passo p {
         margin-top: 1rem;
 
-    }}
+    }
+}
 
 
 /* Tablet */
 @media (min-width: 600px) and (max-width:999px){
-    * {
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-        color: #000;
-    }
     
     .container {
         display: flex;
@@ -280,7 +261,10 @@
     
     .container img {
         max-height: 400px;
-        min-width: 200px;
+        min-width: 100px;
+        margin-left: 10rem; 
+        overflow: hidden;
+        position: relative;
     }
     
     .texto {
