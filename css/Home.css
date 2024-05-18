@@ -39,7 +39,7 @@
     }
     
     .sub {
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-left: 4rem;
     }
     
@@ -142,7 +142,7 @@
         display: flex;
         justify-content: center;
         margin-right: 2rem;
-        margin-top: -1rem;
+        margin-top: 9rem;
 
         h2 {
             margin-top: 0;
@@ -219,13 +219,13 @@
     }
     
     .container img {
-        margin-top: 3rem;
+        margin-top: 0rem;
         max-height: 400px;
         width: 100%;
     }
 
     .sub {
-        margin-top: -1rem;
+        
     }
     
     .texto h1 {
@@ -242,8 +242,8 @@
     .sub h2 {
         display: flex;
         justify-content: center;
-        margin-top: 15rem;
-        margin-left: -2rem;
+        margin-top: 5rem;
+        margin-right: 4rem;
         
     }
     
@@ -334,7 +334,7 @@
 
 /* Tablet */
 @media (min-width: 600px) and (max-width:999px){
-   
+
     .container {
         display: flex;
         max-width: 100%;
@@ -365,7 +365,7 @@
     }
     
     .sub {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-left: 4rem;
     }
     
@@ -439,12 +439,6 @@
 
 /* Desktop */
 @media (min-width: 1000px) and (max-width:1399px){
-    * {
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-        color: #000;
-    }
     
     .container {
         display: flex;
@@ -455,45 +449,29 @@
     }
     
     .container img {
-        max-height: 400px;
-        min-width: 200px;
-    }
-    
-    .texto {
-        font-size: 18px;
-        margin-left: 3rem;
-        margin-right: 20px;
-    }
-    
-    .texto h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-    
-    .texto p {
-        font-size: 20px;
-        margin-top: 2rem;
+        height: 25rem;
+        width: 35rem;
+        margin: 0;
     }
     
     .sub {
-        margin-top: 2rem;
+        margin-top: 3rem;
         margin-left: 4rem;
     }
     
     .passoAPasso {
-        height: 260px;
-        margin-top: 2rem;
+        height: 50rem;
+        margin-top: 3rem;
         margin-bottom: 2.5rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
+        margin-right: 5rem;
+        margin-left: 5rem;
         box-sizing: border-box;
         border-radius: 6rem;
         background-color: #dbe3ff;
         display: flex;
         justify-content: center;
-        
-        
     }
+
     .passos-container {
         display: flex;
         flex-wrap: wrap;
@@ -503,13 +481,10 @@
     }
     
     .passo {
-        flex: 1;
-        margin: 10px;
-        border-radius: 10px;
-        padding: 10px;
         text-align: center;
         margin-top: 2rem;
         margin-right: 5rem;
+        justify-content: center;
     }
     
     .watson {
@@ -525,5 +500,36 @@
     .passo p {
         margin-top: 1rem;
 
+    }
+
+    .first-step{
+        margin-left: 12rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .first-step .passo:first-of-type img {
+        width: 95px; 
+        height: auto; 
+        margin-bottom: -1rem;
+    }
+    
+    .second-step{
+        display: flex;
+        flex-direction: row;
+        margin-left: 12rem;
+    }
+
+    .first-step .passo:nth-of-type(2) img {
+        margin-top: 2rem;}
+
+    .third-step{
+        display: flex;
+        flex-direction: row;
+        margin-left: 28rem;
+
+        h3{
+            margin-bottom: 3.7rem;
+        }
     }
 }
