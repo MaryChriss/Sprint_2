@@ -1,4 +1,5 @@
  /* Large */
+
     * {
         text-decoration: none;
         margin: 0;
@@ -8,15 +9,17 @@
     
     .container {
         display: flex;
-        max-width: 100%;
-        max-height: 400px;
+
+        height: 30rem;
         background-color: #a9e1ff;
         align-items: center;
     }
     
     .container img {
-        max-height: 400px;
-        min-width: 200px;
+        height: 30rem;
+        width: 50rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
     }
     
     .texto {
@@ -55,12 +58,13 @@
     .passos-container {
         display: flex;
         margin: 1rem;
+        min-width: 300px;
 
     }
     
     .passo {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         border-radius: 10px;
         text-align: center;
         display: flex;
@@ -192,6 +196,17 @@
 
     }
     
+    .second-step img{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+
+    .third-step img{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
     
 }
 
@@ -289,8 +304,8 @@
     }
 
     .first-step .passo:first-of-type img {
-        width: 95px; /* Ajuste o tamanho conforme necessário */
-        height: auto; /* Mantém a proporção da imagem */
+        width: 95px; 
+        height: auto; 
         margin-bottom: -1rem;
     }
     
@@ -319,21 +334,19 @@
 
 /* Tablet */
 @media (min-width: 600px) and (max-width:999px){
-    
+   
     .container {
         display: flex;
         max-width: 100%;
-        max-height: 400px;
+        max-height: 20rem;
         background-color: #a9e1ff;
-        align-items: center;
+        flex-direction: row;
     }
     
     .container img {
-        max-height: 400px;
-        min-width: 100px;
-        margin-left: 10rem; 
-        overflow: hidden;
-        position: relative;
+        height: 20rem;
+        width: 30rem;
+        margin: 0;
     }
     
     .texto {
@@ -343,13 +356,13 @@
     }
     
     .texto h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-bottom: 5px;
     }
     
     .texto p {
-        font-size: 20px;
-        margin-top: 2rem;
+        font-size: 10px;
+        margin-top: 1rem;
     }
     
     .sub {
@@ -358,12 +371,10 @@
     }
     
     .passoAPasso {
-        height: 260px;
-        margin-top: 2rem;
-        margin-bottom: 2.5rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        box-sizing: border-box;
+        min-height: 10rem;
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         border-radius: 6rem;
         background-color: #dbe3ff;
         display: flex;
@@ -373,27 +384,30 @@
     }
     .passos-container {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0 auto;
+        margin: 1rem;
+        min-width: 300px;
 
     }
     
     .passo {
-        flex: 1;
-        margin: 10px;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
         margin-top: 2rem;
-        margin-right: 5rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+            width: 63px;
+        }
+        p{
+            width: 25rem;
+            height: 5rem;
+        }
     }
     
-    .watson {
-        max-width: 100px; 
-        height: auto;
-        margin-bottom: -1rem;
-    }
     
     .passo h3 {
         margin-top: 1rem;
@@ -403,6 +417,23 @@
         margin-top: 1rem;
 
     }
+    .first-step{
+        display: flex;
+        flex-direction: column;
+    }
+    .second-step{
+        display: flex;
+        flex-direction: column;
+    }
+    .third-step{
+        display: flex;
+        flex-direction: column;
+
+        h3{
+            margin-bottom: 3.7rem;
+        }
+    }
+    
 }
 
 /* Desktop */

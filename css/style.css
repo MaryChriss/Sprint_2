@@ -200,7 +200,7 @@
             display: flex;
             align-items: center;
             border-bottom: 3rem solid #e7e7e7;
-            width: 77.3rem;
+            width: 95.1rem;
             background-color: #fbfbfb;
         }
         
@@ -283,8 +283,8 @@
         }
         
         .rodape {
-            position: relative;
-            width: 77.3rem;
+            position: fixed;
+            width: 95.1rem;
             height: 3rem;
             background-color: #000;
             display: flex;
