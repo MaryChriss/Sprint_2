@@ -1,4 +1,5 @@
  /* Large */
+
     * {
         text-decoration: none;
         margin: 0;
@@ -8,15 +9,17 @@
     
     .container {
         display: flex;
-        max-width: 100%;
-        max-height: 400px;
+
+        height: 30rem;
         background-color: #a9e1ff;
         align-items: center;
     }
     
     .container img {
-        max-height: 400px;
-        min-width: 200px;
+        height: 30rem;
+        width: 50rem;
+        margin-bottom: 0rem;
+        margin-top: 0;
     }
     
     .texto {
@@ -41,12 +44,10 @@
     }
     
     .passoAPasso {
-        height: 260px;
-        margin-top: 2rem;
-        margin-bottom: 2.5rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        box-sizing: border-box;
+        min-height: 10rem;
+        margin: 0;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         border-radius: 6rem;
         background-color: #dbe3ff;
         display: flex;
@@ -56,27 +57,30 @@
     }
     .passos-container {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0 auto;
+        margin: 1rem;
+        min-width: 300px;
 
     }
     
     .passo {
-        flex: 1;
-        margin: 10px;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         border-radius: 10px;
-        padding: 10px;
         text-align: center;
-        margin-top: 2rem;
-        margin-right: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+            width: 63px;
+        }
+        p{
+            width: 25rem;
+            height: 5rem;
+        }
     }
     
-    .watson {
-        max-width: 100px; 
-        height: auto;
-        margin-bottom: -1rem;
-    }
     
     .passo h3 {
         margin-top: 1rem;
@@ -85,17 +89,27 @@
     .passo p {
         margin-top: 1rem;
 
+    }
+    .first-step{
+        display: flex;
+        flex-direction: row;
+    }
+    .second-step{
+        display: flex;
+        flex-direction: row;
+    }
+    .third-step{
+        display: flex;
+        flex-direction: row;
+
+        h3{
+            margin-bottom: 3.7rem;
+        }
     }
     
 
 @media(max-width: 400px) {
-    * {
-        text-decoration: none;
-        margin: 0;
-        padding: 0;
-        color: #000;
-    }
-    
+
     .container {
         display: flex;
         max-width: 100%;
@@ -103,10 +117,9 @@
         background-color: #a9e1ff;
         align-items: center;
     }
-    
-    .container img {
-        max-height: 400px;
-        min-width: 200px;
+
+    .img {
+        margin-top: -1.9rem;
     }
     
     .texto {
@@ -126,12 +139,18 @@
     }
     
     .sub {
-        margin-top: 2rem;
-        margin-left: 4rem;
+        display: flex;
+        justify-content: center;
+        margin-right: 2rem;
+        margin-top: -1rem;
+
+        h2 {
+            margin-top: 0;
+        }
     }
     
     .passoAPasso {
-        height: 260px;
+        min-height: 50rem;
         margin-top: 2rem;
         margin-bottom: 2.5rem;
         margin-right: 3rem;
@@ -177,6 +196,17 @@
 
     }
     
+    .second-step img{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+
+    .third-step img{
+        display: flex;
+        flex-direction: column;
+        margin-top: 7rem;
+    }
     
 }
 
@@ -192,6 +222,10 @@
         margin-top: 3rem;
         max-height: 400px;
         width: 100%;
+    }
+
+    .sub {
+        margin-top: -1rem;
     }
     
     .texto h1 {
@@ -214,11 +248,11 @@
     }
     
     .passoAPasso {
-        height: 60rem;
+        min-height: 45rem;
+        min-width: 20rem;
         margin-top: 2rem;
-        margin-bottom: 2.5rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
         box-sizing: border-box;
         border-radius: 6rem;
         background-color: #dbe3ff;
@@ -233,9 +267,18 @@
         width: 100%;
         margin: 0 auto;
         justify-content: center;
-        margin-left: 4rem;
+        align-items: center;
+        margin-left: 0rem;
     }
     
+    .passo{
+        margin: 0;
+
+        p{
+            width: 15rem;
+            height: 8rem;
+        }
+    }
     
     .passo h3 {
         margin-top: 1rem;
@@ -245,42 +288,80 @@
         margin-top: 1rem;
 
     }
+    .first-step{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.2rem;
+        margin-right: 1rem;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+
+    .first-step .passo:first-of-type img {
+        width: 95px; 
+        height: auto; 
+        margin-bottom: -1rem;
+    }
+    
+    
+    
+    .second-step{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.8rem;
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+    .third-step{
+        margin-top: -6rem;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
 /* Tablet */
 @media (min-width: 600px) and (max-width:999px){
-    
+   
     .container {
         display: flex;
         max-width: 100%;
-        max-height: 400px;
+        max-height: 20rem;
         background-color: #a9e1ff;
-        align-items: center;
+        flex-direction: row;
     }
     
     .container img {
-        max-height: 400px;
-        min-width: 100px;
-        margin-left: 10rem; 
-        overflow: hidden;
-        position: relative;
+        height: 20rem;
+        width: 34rem;
+        margin: 0;
     }
     
     .texto {
-        font-size: 18px;
         margin-left: 3rem;
         margin-right: 20px;
     }
     
     .texto h1 {
-        font-size: 40px;
-        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
     }
     
     .texto p {
-        font-size: 20px;
-        margin-top: 2rem;
+        font-size: 15px;
+        margin-top: 1rem;
     }
     
     .sub {
@@ -289,42 +370,46 @@
     }
     
     .passoAPasso {
-        height: 260px;
-        margin-top: 2rem;
-        margin-bottom: 2.5rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
-        box-sizing: border-box;
+        min-height: 10rem;
+        margin: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         border-radius: 6rem;
         background-color: #dbe3ff;
         display: flex;
         justify-content: center;
-        
+        align-items: center;
         
     }
     .passos-container {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0 auto;
+        flex-direction: column;
+        margin: 1rem;
+        min-width: 300px;
+        justify-content: center;
+        align-items: center;
 
     }
     
     .passo {
-        flex: 1;
-        margin: 10px;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: center;
         margin-top: 2rem;
-        margin-right: 5rem;
+        margin-bottom: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img{
+            width: 63px;
+        }
+        p{
+            width: 24rem;
+            height: 10rem;
+        }
     }
     
-    .watson {
-        max-width: 100px; 
-        height: auto;
-        margin-bottom: -1rem;
-    }
     
     .passo h3 {
         margin-top: 1rem;
@@ -332,8 +417,24 @@
     
     .passo p {
         margin-top: 1rem;
-
     }
+    .first-step{
+        display: flex;
+        flex-direction: row;
+    }
+    .second-step{
+        display: flex;
+        flex-direction: row;
+    }
+    .third-step{
+        display: flex;
+        flex-direction: row;
+
+        h3{
+            margin-bottom: 3.7rem;
+        }
+    }
+    
 }
 
 /* Desktop */
