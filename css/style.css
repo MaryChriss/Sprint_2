@@ -195,19 +195,12 @@
     }
 
     /* Tablet */
-    @media (min-width: 600px) and (max-width:999px){
-        *{
-            text-decoration: none;
-            margin: 0;
-            padding: 0;
-            color: #000;
-        }
-        
+    @media (min-width: 600px) and (max-width:999px){  
         .cabecalho {
             display: flex;
             align-items: center;
             border-bottom: 3rem solid #e7e7e7;
-            height: 4rem;
+            width: 77.3rem;
             background-color: #fbfbfb;
         }
         
@@ -233,23 +226,12 @@
             color: #00a1fc;
             font-size: 1.5rem;
         }
-        .rotas-cabecalho {
-            display: flex;
-            align-items: center;
-            height: 4rem;
-        }
-        
-        .menu{
-            display: flex;
-            align-items: center;
-            height: 4rem;
-        }
         
         .rotas {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 7rem;
+            width: 9rem;
             height: 4rem;
         }
         
@@ -301,14 +283,11 @@
         }
         
         .rodape {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
+            position: relative;
+            width: 77.3rem;
             height: 3rem;
             background-color: #000;
             display: flex;
-            justify-content: flex-end;
             align-items: center;
         }
         
