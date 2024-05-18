@@ -113,6 +113,10 @@
         background-color: #a9e1ff;
         align-items: center;
     }
+
+    .img {
+        margin-top: -1.9rem;
+    }
     
     .texto {
         font-size: 18px;
@@ -131,12 +135,18 @@
     }
     
     .sub {
-        margin-top: 2rem;
-        margin-left: 4rem;
+        display: flex;
+        justify-content: center;
+        margin-right: 2rem;
+        margin-top: -1rem;
+
+        h2 {
+            margin-top: 0;
+        }
     }
     
     .passoAPasso {
-        height: 260px;
+        min-height: 50rem;
         margin-top: 2rem;
         margin-bottom: 2.5rem;
         margin-right: 3rem;
