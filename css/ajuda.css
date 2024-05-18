@@ -1,0 +1,128 @@
+.corpo{
+    background-image: url(../img/fundo.png);
+    background-position: right;
+}
+input[type="text"] {
+    width: 400px;
+    padding: 10px;
+    border: 0px solid #ccc;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.search-icon {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.direita {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50rem;
+
+}
+
+.direita h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.ask{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.section1, .section2 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section1 {
+    margin-right: 5rem;
+    margin-left: 10rem;
+    
+}
+.pedirSocorro, .dadosPessoais, .reembolso, .contatos, .boleto, .app {
+    box-sizing: border-box;
+    border: 1px black solid;
+}
+
+.esquerda {
+    display: flex;
+}
+
+.pedirSocorro, .dadosPessoais, .reembolso, .contatos, .boleto, .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 13rem; 
+    height: 12rem;
+}
+
+.pedirSocorro img, .dadosPessoais img, .reembolso img, .contatos img, .boleto img, .app img {
+    margin-top: 1.5rem;
+    width: 60px; 
+    height: 60px; 
+}
+
+.contatos img{
+    width: 60px; 
+    height: 70px;
+}
+
+.app img{
+    width: 45px; 
+    height: 65px;
+}
+
+.reembolso img {
+    width: 65px; 
+    height: 45px;
+}
+
+.dadosPessoais img{
+    margin-top: 1rem;
+}
+
+.pedirSocorro img{
+    margin-top: 1rem;
+}
+
+.pedirSocorro h2, .dadosPessoais h2, .reembolso h2, .contatos h2, .boleto h2, .app h2 {
+    margin-top: 15px;
+    text-align: center;
+}
+    /* Large */
+    @media(min-width: 1400px) {}
+
+    /* Mobile */
+    @media(max-width: 599px) {
+        
+    }
+
+    /* Tablet */
+    @media (min-width: 600px) and (max-width:999px){}
+
+    /* Desktop */
+    @media (min-width: 1000px) and (max-width:1399px){}
