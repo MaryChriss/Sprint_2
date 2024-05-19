@@ -275,14 +275,15 @@
     .conhecaMais p {
     margin-left: 3rem;
     }
+
     .conhecaMais {
-        margin-top: 8rem;
+        margin-top: 2rem;
         font-size: 18px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     
     }
     
