@@ -473,25 +473,18 @@
     .principal {
         width: 100%;
         height: 300px;
-        background-color: #9cb2ff;
-        top: 0;
-        right: 0;
-        z-index: 1;
     }
     
     .principal p {
             text-align: center;
             padding-top: 80px;
             font-size: 29px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
     
     .principal h1 {
             text-align: center;
             margin-top: 20px;
             font-size: 40px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-weight: bold;
         }
     
     
@@ -500,8 +493,6 @@
         justify-content: flex-end;
         width: 100%;
         top: 15rem;
-        right: 0;
-        z-index: 2;
     }
     
     .conhecaMais h4 {
@@ -514,13 +505,9 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: -10rem;
     }
     
     .conheca {
-        list-style-type: none;
-        background-color: white;
-        border: 3px #004fd2 solid;
         border-radius: 3rem;
         margin: 1rem;
     }
@@ -528,7 +515,6 @@
     .conheca a {
         padding: 2rem;
         font-size: 18px;
-        color:#004fd2 ;
         margin-bottom: 2rem;
     }
     
@@ -539,12 +525,7 @@
         justify-content: center;
         align-items: center;
         width: 30rem;
-        background-color: #D2EFFF;
         height: 305.95px;
-        margin-bottom: 6rem;
-        border-top-right-radius: 3rem;
-        border-bottom-right-radius: 3rem;
-        box-shadow: 5px 15px 15px #0000001a;
     }
     
     .colaboradores h3 {
@@ -559,9 +540,6 @@
     }
     
     .saiba {
-        list-style-type: none;
-        background-color: white;
-        border: 3px #00A1FC solid;
         border-radius: 3rem;
         margin: 1rem;
     
@@ -570,7 +548,6 @@
     .saiba a {
         padding: 2rem;
         font-size: 18px;
-        color:black ;
         margin-bottom: 2rem;
     }
     
@@ -578,11 +555,9 @@
         
         position: absolute;
         margin-top: -50px;
-        z-index: 10;
         width: 43rem;
         border-top-left-radius: 3rem;
         border-bottom-left-radius: 3rem;
-        box-shadow: -10px 20px 8px #0000001a;
     }
     
     .inferior{
