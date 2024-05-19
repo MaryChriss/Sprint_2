@@ -1,3 +1,4 @@
+    /* Large */
 .principal {
     width: 100%;
     height: 300px;
@@ -42,9 +43,8 @@
     font-size: 18px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20rem;
-    margin-right: 3rem;
+    align-items: flex-end;
+    margin-top: -10rem;
 
 }
 
@@ -122,8 +122,121 @@
     flex-direction: row;
     justify-content: space-between;
 }
-    /* Large */
-    @media(min-width: 1400px) {}
+
+@media(max-width: 400px) {
+
+    .principal {
+        width: 100%;
+        height: 230px;
+        background-color: #9cb2ff;
+    }
+    
+    .principal p {
+        font-size: 20px;
+        padding-top: 5rem;
+        }
+    
+    .principal h1 {
+            font-size: 20px;
+            
+        }
+
+    .imagem {
+        margin-top: 3rem;
+    }
+
+    .imagem img {
+        display: flex;
+        height: 15rem;
+        margin-top: 40rem;
+    }
+    
+    .conhecaMais h4 {
+        font-weight: bold; 
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .conhecaMais p {
+        
+    }
+    .conhecaMais {
+        margin-top: 8rem;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .conheca {
+        list-style-type: none;
+        background-color: white;
+        border: 3px #004fd2 solid;
+        border-radius: 3rem;
+        margin: 1rem;
+    
+    }
+    
+    .conheca a {
+        padding: 2rem;
+        font-size: 18px;
+        color:#004fd2 ;
+        margin-bottom: 2rem;
+    }
+    
+    .colaboradores {
+        margin-top: 15rem;
+        background-color: #D2EFFF;
+        border-radius: 3rem;
+        box-shadow: 5px 15px 15px #0000001a;
+    }
+    
+    .colaboradores h3 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 1rem; 
+    }
+    
+    .colaboradores p {
+        font-size: 20px;
+        line-height: 2rem;
+    }
+    
+    .saiba {
+        list-style-type: none;
+        background-color: white;
+        border: 3px #00A1FC solid;
+        border-radius: 3rem;
+        margin: 1rem;
+    
+    }
+    
+    .saiba a {
+        padding: 2rem;
+        font-size: 18px;
+        color:black ;
+        margin-bottom: 2rem;
+    }
+    
+    .imagem img {
+        
+        position: absolute;
+        margin-top: -50px;
+        z-index: 10;
+        width: 43rem;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        box-shadow: -10px 20px 8px #0000001a;
+    }
+    
+    .inferior{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
     /* Mobile */
     @media(max-width: 599px) {
