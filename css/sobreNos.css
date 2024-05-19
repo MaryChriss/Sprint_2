@@ -160,21 +160,15 @@
     .conhecaMais p {
     margin-left: 3rem;
     }
+
     .conhecaMais {
         margin-top: 8rem;
         font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 3rem;
     
     }
     
     .conheca {
-        list-style-type: none;
-        background-color: white;
-        border: 3px #004fd2 solid;
         border-radius: 3rem;
         margin: 1rem;
     
@@ -189,9 +183,7 @@
     
     .colaboradores {
         margin-top: 15rem;
-        background-color: #D2EFFF;
         border-radius: 3rem;
-        box-shadow: 5px 15px 15px #0000001a;
     }
     
     .colaboradores h3 {
@@ -478,4 +470,4 @@
 }
 
     /* Desktop */
-    @media (min-width: 1000px) and (max-width:1399px){}
+@media (min-width: 1000px) and (max-width:1399px){}
