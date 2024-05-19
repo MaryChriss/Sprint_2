@@ -246,7 +246,7 @@ input[type="text"] {
     /* Mobile */
 @media(max-width: 599px) {
     .corpo{
-        background-image: url(../img/fundoM.png);
+        background-image: url(../img/Mobile.png);
         background-position: top;
         background-repeat: no-repeat;
     }
@@ -370,7 +370,6 @@ input[type="text"] {
         margin-top: 15px;
         text-align: center;
     }}
-    }
 
     /* Tablet */
 @media (min-width: 600px) and (max-width:999px){}
