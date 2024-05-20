@@ -286,7 +286,6 @@ input[type="text"] {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 2rem;
     }
     
     .container {
@@ -303,13 +302,13 @@ input[type="text"] {
     }
     
     .section1 {
-        margin-top: 0rem;
+        margin-top: 2rem;
         margin-right: 0rem;
         margin-left: 0rem;
     }
     
     .section2 {
-        margin-bottom: 0rem;
+        margin-bottom: 2rem;
     }
 
     .esquerda {
