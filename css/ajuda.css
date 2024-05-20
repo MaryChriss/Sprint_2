@@ -322,7 +322,7 @@ input[type="text"] {
     /* Desktop */
 @media (min-width: 1000px) and (max-width:1399px){
     .corpo{
-        background-image: url(../img/fundo.png);
+        background-image: url(../img/Desktop.png);
         background-position: right;
         background-repeat: no-repeat;
     }
