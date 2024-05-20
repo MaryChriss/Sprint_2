@@ -183,6 +183,7 @@ input[type="text"] {
 
     /* Mobile */
 @media (min-width: 401px) and (max-width: 599px) {
+
     .corpo{
         background-image: url(../img/Mobile.png);
         background-position: top;
@@ -247,24 +248,21 @@ input[type="text"] {
 
     /* Tablet */
 @media (min-width: 600px) and (max-width:999px){
-
+    
     .corpo{
-        background-image: url(../img/Tablet.png);
-        background-position: right;
+        background-image: url(../img/Mobile.png);
+        background-position: top;
         background-repeat: no-repeat;
     }
+    
     input[type="text"] {
-        width: 400px;
-        padding: 10px;
+        width: 300px;
+        padding: 5px;
         border: 0px solid #ccc;
         font-size: 16px;
         background-color: #fff;
         border-radius: 1rem;
-    }
-    
-    .search-icon {
-        width: 2rem;
-        cursor: pointer;
+        display: flex;
     }
     
     .direita {
@@ -273,99 +271,45 @@ input[type="text"] {
         flex-direction: column;
         align-items: center;
         height: 100%;
-        width: 50rem;
+        width: 100%;
     
     }
     
     .direita h1 {
-        margin-top: 20rem;
-        margin-bottom: 10px;
-        font-size: 2.5rem;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
     }
     
     .container {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-    
-    .ask{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        border: 1px solid #ccc;
-        background-color: #fff;
-        border-radius: 1rem;
-        padding: 0.3rem;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .section1, .section2 {
-        margin-top: 2rem;
+        margin-top: 0rem;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     .section1 {
-        margin-right: 5rem;
-        margin-left: 10rem;
-        
-    }
-    .pedirSocorro, .dadosPessoais, .reembolso, .contatos, .boleto, .app {
-        box-sizing: border-box;
-        border: 1px black solid;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
     }
     
+    .section2 {
+        margin-bottom: 3rem;
+    }
+
     .esquerda {
         display: flex;
+        justify-content: center;
+        margin-top: 10rem;
     }
-    
-    .pedirSocorro, .dadosPessoais, .reembolso, .contatos, .boleto, .app {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 20px;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        width: 13rem; 
-        height: 12rem;
-    }
-    
-    .pedirSocorro img, .dadosPessoais img, .reembolso img, .contatos img, .boleto img, .app img {
-        margin-top: 1.5rem;
-        width: 60px; 
-        height: 60px; 
-    }
-    
-    .contatos img{
-        width: 60px; 
-        height: 70px;
-    }
-    
-    .app img{
-        width: 45px; 
-        height: 65px;
-    }
-    
-    .reembolso img {
-        width: 65px; 
-        height: 45px;
-    }
-    
-    .dadosPessoais img{
-        margin-top: 1rem;
-    }
-    
-    .pedirSocorro img{
-        margin-top: 1rem;
-    }
-    
-    .pedirSocorro h2, .dadosPessoais h2, .reembolso h2, .contatos h2, .boleto h2, .app h2 {
-        margin-top: 15px;
-        text-align: center;
-    }
-    
+
 }
 
     /* Desktop */
