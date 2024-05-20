@@ -249,7 +249,7 @@ input[type="text"] {
 @media (min-width: 600px) and (max-width:999px){
 
     .corpo{
-        background-image: url(../img/fundo.png);
+        background-image: url(../img/Tablet.png);
         background-position: right;
         background-repeat: no-repeat;
     }
