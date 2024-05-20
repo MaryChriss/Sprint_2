@@ -248,16 +248,16 @@ input[type="text"] {
 
     /* Tablet */
 @media (min-width: 600px) and (max-width:999px){
-    
+
     .corpo{
-        background-image: url(../img/Mobile.png);
+        background-image: url(../img/Tablet.png);
         background-position: top;
         background-repeat: no-repeat;
     }
     
     input[type="text"] {
-        width: 300px;
-        padding: 5px;
+        width: 450px;
+        padding: 10px;
         border: 0px solid #ccc;
         font-size: 16px;
         background-color: #fff;
@@ -278,7 +278,7 @@ input[type="text"] {
     .direita h1 {
         margin-top: 5rem;
         margin-bottom: 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .container {
@@ -290,7 +290,7 @@ input[type="text"] {
     .section1, .section2 {
         margin-top: 0rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     
@@ -301,7 +301,7 @@ input[type="text"] {
     }
     
     .section2 {
-        margin-bottom: 3rem;
+        margin-bottom: 0rem;
     }
 
     .esquerda {
