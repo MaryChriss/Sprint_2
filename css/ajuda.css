@@ -321,23 +321,11 @@ input[type="text"] {
 
     /* Desktop */
 @media (min-width: 1000px) and (max-width:1399px){
+
     .corpo{
         background-image: url(../img/Desktop.png);
         background-position: right;
         background-repeat: no-repeat;
-    }
-    input[type="text"] {
-        width: 400px;
-        padding: 10px;
-        border: 0px solid #ccc;
-        font-size: 16px;
-        background-color: #fff;
-        border-radius: 1rem;
-    }
-    
-    .search-icon {
-        width: 2rem;
-        cursor: pointer;
     }
     
     .direita {
@@ -347,7 +335,7 @@ input[type="text"] {
         align-items: center;
         height: 100%;
         width: 50rem;
-    
+        margin-left: 5rem;
     }
     
     .direita h1 {
@@ -380,8 +368,8 @@ input[type="text"] {
     }
     
     .section1 {
-        margin-right: 5rem;
-        margin-left: 10rem;
+        margin-right: 0rem;
+        margin-left: 8rem;
         
     }
     .pedirSocorro, .dadosPessoais, .reembolso, .contatos, .boleto, .app {
