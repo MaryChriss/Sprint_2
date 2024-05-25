@@ -103,7 +103,6 @@
     }
     
     .rodape {
-        position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
@@ -127,7 +126,8 @@
             font-size: 25px;
             margin-right: 1rem;
         }
-    
+
+
 
     /* Mobile */
     @media(max-width: 599px) {
