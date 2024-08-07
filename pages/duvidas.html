@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duvidas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/duvidas.css">
+    <script src="../js/script.js"></script>
+</head>
+<body class="corpo">
+
+    <header class="cabecalho">
+
+        <div class="logo-cabecalho">
+            <img src="../img/logoPorto.png" alt="Logo da Porto Seguro">
+            <span class="nomeAg">Porto</span>
+        </div>
+
+        <div >
+            <nav class="rotas">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/equipe.html">Equipe</a></li>
+                    <li><a href="../pages/duvidas.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section class="contato">
+
+        <div class="questions">
+            <img src="../img/carroFuturista.png" alt="">
+
+            <div class="textQuestions">
+                <h1>Dúvidas?</h1>
+                <p>Estamos aqui para ajudar com qualquer dúvida <br>
+                    que você possa ter. <br>
+                    Preencha o formulário abaixo e nossa equipe entrará <br>
+                    em contato com você o mais breve possível.
+                </p>
+            </div>
+        </div>
+
+        <div class="conteudo-forms">
+
+            <div class="forms">
+                <form onsubmit="return validarFormulario()">
+        
+                    <div class="form-sections">
+                        <div class="infos-pessoais">
+                            <div class="campo">
+                                <label for="nome">Nome*:</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+        
+                            <div class="campo">
+                                <label for="email">Email*:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+        
+                            <div class="campo">
+                                <label for="telefone">Telefone:</label>
+                                <input type="tel" id="telefone" name="telefone">
+                            </div>
+                        </div>
+        
+                        <div class="mensagem">
+                            <div>
+                                <label for="mensagem">Mensagem*:</label>
+                                <textarea id="mensagem" name="mensagem" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="botao">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        
+        </div>
+
+    </section>
+
+    <footer class="rodape">
+        <img src="../img/logoPorto.png" alt="Logo Porto Seguro">
+        <span class="nomeAgP">Porto</span>
+    </footer> 
+</body>
+</html>
