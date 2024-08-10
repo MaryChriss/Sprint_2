@@ -134,13 +134,14 @@
     .colaboradores {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         gap: 0.5rem;
         margin-top: 5rem;
     }
     
     .colaborador .imagem {
-        width: 6rem;
-        height: 6rem;
+        width: 10rem;
+        height: 10rem;
         border-radius: 10rem;
         border: white 3px solid;
     }

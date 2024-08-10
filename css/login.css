@@ -1,0 +1,210 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.nomeproj {
+    display: flex;
+    color: #006eff;
+    align-items: center;
+    height: 4rem;
+    margin-left: 2rem;
+}
+
+.conteudo {
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    border-radius: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 6.08rem;
+    margin-right: 4rem ;
+    margin-left: 4rem ;
+    height: 43rem;
+    justify-content: space-between;
+}
+
+.bemVindo {
+    margin-left: 9rem;
+}
+.bemVindo h1{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.bemVindo p{
+    font-size: 1.3rem;
+    margin-top: 1.3rem;
+}
+
+.loginScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 35rem;
+    height: 37rem;
+    margin-right: 9rem;
+    border-radius: 2rem;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.CPF {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+}
+.CPF input{
+    height: 3rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+    border: gray;
+}
+.CPF img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.senha {
+    display: flex;
+    flex-direction: row;
+}
+.senha input{
+    height: 3rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+    border: gray;
+}
+.senha img{
+    margin-top: 0.6rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.botaoEntre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4rem;
+}
+.botaoEntre button{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 3rem;
+    width: 13rem;
+    background-color: #006eff;
+    color: white;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+
+.registerScreen {
+    display: none; 
+    border: 1px solid #ccc; 
+    background-color: white;
+    width: 35rem;
+    height: 37rem;
+    margin-right: 9rem;
+    border-radius: 2rem;
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+.nome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.nome input{
+    height: 3rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+    border: gray;
+}
+
+.CPFcadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.CPFcadastro input{
+    height: 3rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+    border: gray;
+}
+
+.senhaCadastro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
+.senhaCadastro input{
+    height: 3rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    background-color: #D9D9D9;
+    border: gray;
+}
+
+
+
+
+
+
+
+
+.rodape {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rodape img {
+        width: 20px; 
+        height: auto;
+        border-radius: 5px;
+    }
+
+.nomeAgP {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #fbfbfb;
+        font-size: 25px;
+        margin-right: 1rem;
+    }

@@ -5,117 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/Home.css">
-    <script class="chatbot">
-        window.watsonAssistantChatOptions = {
-          integrationID: "949ab6c8-5ead-4f01-b875-bcf3b5363c72", // The ID of this integration.
-          region: "us-south", // The region your integration is hosted in.
-          serviceInstanceID: "5ff36946-1ec7-434e-8572-b1f04d3af74a", // The ID of your service instance.
-        onLoad: async (instance) => { await instance.render(); }
-        };
-        setTimeout(function(){
-        const t=document.createElement('script');
-        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-        document.head.appendChild(t);
-        });
-    </script>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login-cadastro.js"></script>
 </head>
 <body>
-    <header class="cabecalho">
-
-        <div class="logo-cabecalho">
-            <img src="./img/logoPorto.png" alt="Logo da Porto Seguro">
-            <span class="nomeAg">Porto</span>
-        </div>
-
-        <div >
-            <nav class="rotas">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/equipe.html">Equipe</a></li>
-                    <li><a href="./pages/duvidas.html">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-
+    <header class="nomeproj">
+        <h1>Brain Drive</h1>
     </header>
 
-    <section class="home">
+    <section class="conteudo">
 
-        <div class="description">
+        <div class="bemVindo">
 
-            <div class="text">
-                <h1>Conheça nossa inteligência artificial avançada, <br> 
-                    projetada para simplificar <br>
-                    o processo de diagnóstico do seu veículo.
-                </h1>
+            <h1>Bem-vindo ao Brain Drive! <br>
+                Seu assistente virtual para <br>
+                diagnóstico automotivo
+            </h1>
 
-                <p>O Brain Drive irá analisar e compreender as informações que você <br>
-                    fornece sobre o problema do seu carro, oferecendo um <br>
-                    auto-diagnóstico preciso e facilitando sua visita às nossas agências.
-                </p>
-            </div>
-
-            <div class="ImgPrinc">
-                <img class="decoration1" src="./img/BolinhasDeco.png" alt="">
-                <img class="fundo" src="./img/InteligenciaArt.png" alt="Imagem com um rovo segunrando um tablet com um fundo tecnologico">
-            </div>
+            <p>Descubra problemas no seu veículo com 
+                facilidade e siga as <br> recomendações para 
+                mantê-lo em perfeito estado. <br>
+                Faça login para começar!
+            </p>
 
         </div>
 
-        <div class="sub">
-            <h2>Usando a IA em alguns passos:</h2>
+        <div id="loginScreen" class="loginScreen">
+            <form id="loginForm">
+                <h2>Login:</h2>
+
+                <div class="CPF">
+                    <img src="./img/user.png" alt="">
+                    <input type="text" id="loginCPF" placeholder="CPF">
+                </div>
+
+                <div class="senha">
+                    <img src="./img/cadeado.png" alt="">
+                    <input type="password" id="loginSenha" placeholder="Senha" style="display: block; width: 100%; margin-bottom: 20px;"><br>
+                </div>
+
+                <div class="botaoEntre">
+                <button class="botaoEntre" type="button" onclick="login()">Entrar!</button>
+                </div>
+
+                <p>É novo aqui? <a href="#" onclick="toggleScreen()">Cadastre-se</a></p>
+            </form>
         </div>
-    
-        <article class="passoAPasso">
 
-            <div class="passos-container">
-            
-                <div class="first-step">
-                    <div class="passo">
-                        <img  src="./img/WatsonIA.png" alt="Icone watson">
-                        <h3>Passo 1: Inicie a conversa</h3>
-                        <p>Clique no ícone do chatbot para iniciar a conversa com nossa inteligência artificial.</p>
-                    </div>
-    
-                    <div class="passo">
-                        <img src="./img/comments.png" alt="Ícone">
-                        <h3>Passo 2: Descreva o Problema</h3>
-                        <p>Descreva o problema que você está enfrentando com o seu carro de forma clara e detalhada.
-                        Exemplo: "Meu carro está fazendo um barulho estranho quando eu viro à esquerda."</p>
-                    </div>
-                </div>
-    
-                <div class="second-step">
-                    <div class="passo">
-                        <img src="./img/list.png" alt="Ícone de lista">
-                        <h3>Passo 3: Responda às Perguntas</h3>
-                        <p>O chatbot fará uma série de perguntas para entender melhor o problema do seu carro.</p>
-                    </div>
-    
-                    <div class="passo">
-                        <img src="./img/user-check.png" alt="Ícone de user">
-                        <h3>Passo 4: Receba o Diagnóstico</h3>
-                        <p>Com base nas suas respostas, o chatbot fornecerá um diagnóstico preliminar do problema do seu carro, juntamente com possíveis causas.</p>
-                    </div>
-                </div>
-    
-                <div class="third-step">
-                    <div class="passo">
-                        <img src="./img/car.png" alt="Ícone">
-                        <h3 class="">Passo 5: Vá até a agencia Porto mais próxima.</h3>
-                    </div>
-                </div>
-    
-            </div>
 
-        </article>
+
+
+
+        <div id="registerScreen" class="registerScreen">
+
+            <form id="registerForm" onsubmit="return validateForm()">
+                <h2>Cadastre-se:</h2>
+                
+                <div class="nome">
+                    <input type="text" id="registerNome" placeholder="Nome Completo">
+                </div>
+
+                <div class="CPFcadastro">
+                    <input type="text" id="registerCPF" placeholder="CPF">
+                </div>
+
+                <div class="senhaCadastro">
+                    <input type="password" id="registerSenha" placeholder="Senha">
+                
+
+                    <input type="password" id="confirmSenha" placeholder="Confirme a senha">
+                </div>
+
+                <div class="botaoEntre">
+                    <button class="botaoEntre" type="submit">Entrar!</button>
+                </div>
+
+            </form>
+        </div>
     </section>
 
     <footer class="rodape">
         <img src="./img/logoPorto.png" alt="Logo Porto Seguro">
         <span class="nomeAgP">Porto</span>
     </footer> 
-
 </body>
